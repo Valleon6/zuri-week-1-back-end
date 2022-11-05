@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HngInternController {
 
 
-    @GetMapping("/internProfile")
+    @GetMapping("/profile")
     public ResponseEntity<HngInternProfileResponse> getHngInternProfile() {
         return new ResponseEntity<>(new HngInternProfileResponse(
                 "Valleon",
