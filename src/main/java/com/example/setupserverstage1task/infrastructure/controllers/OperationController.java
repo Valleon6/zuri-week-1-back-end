@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OperationController {
     private OperationService operationService;
 
-    @PostMapping(path = "/operation-calculation")
+    @PostMapping( "/operation-calculation")
     public ResponseEntity<OperationResponse> operationResult(@RequestBody OperationRequest operationRequest) {
 
         return new ResponseEntity<>(new OperationResponse(
