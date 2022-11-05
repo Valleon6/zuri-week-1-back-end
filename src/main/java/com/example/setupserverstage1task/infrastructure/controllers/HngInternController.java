@@ -1,7 +1,6 @@
 package com.example.setupserverstage1task.infrastructure.controllers;
 
 import com.example.setupserverstage1task.payload.response.HngInternProfileResponse;
-import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
