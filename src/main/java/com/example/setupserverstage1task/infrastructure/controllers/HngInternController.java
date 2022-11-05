@@ -1,6 +1,7 @@
 package com.example.setupserverstage1task.infrastructure.controllers;
 
 import com.example.setupserverstage1task.payload.response.HngInternProfileResponse;
+import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,13 +10,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HngInternController {
-    @GetMapping("/")
+
+
+    @GetMapping("/internProfile")
     public ResponseEntity<HngInternProfileResponse> getHngInternProfile() {
         return new ResponseEntity<>(new HngInternProfileResponse(
                 "Valleon",
                 true,
                 26,
-                "I'm a Java software Engineer, an Author, and an Actor."),
-                HttpStatus.OK);
+                "I'm a Java software Engineer, an Author, and an Actor."), HttpStatus.OK);
     }
+
+
+//   internProfile operation-calculation
 }
