@@ -14,19 +14,30 @@ public class OperationService implements OperationServiceInterface {
 
         int x = operationRequest.getX();
         int y = operationRequest.getY();
-       Operation_Type operationType = operationRequest.getOperation_type();
+//       Operation_Type operationType = operationRequest.getOperation_type();
+       String operationType = operationRequest.getOperation_type();
 
 
-        if (operationType == Operation_Type.ADDITION) {
+//        if (operationType == Operation_Type.ADDITION) {
+//            return (x + y);
+//        } else if ((operationType == Operation_Type.SUBTRACTION)) {
+//            return (x - y);
+//        } else if (operationType == Operation_Type.MULTIPLICATION) {
+//            return (x * y);
+//        } else if (operationType.toString().contains("add")) {
+//            return 30;
+//        } else {
+//            return 1;
+//        }
+
+        if (operationType.equalsIgnoreCase("ADDITION") ) {
             return (x + y);
-        } else if ((operationType == Operation_Type.SUBTRACTION)) {
+        } else if (operationType.equalsIgnoreCase("SUBTRACTION")) {
             return (x - y);
-        } else if (operationType == Operation_Type.MULTIPLICATION) {
+        } else if (operationType.equalsIgnoreCase("MULTIPLICATION")){
             return (x * y);
-        } else if (operationType.toString().contains("add")) {
-            return 30;
         } else {
-            return 1;
+            return 30;
         }
     }
 }

@@ -12,7 +12,9 @@ public class OperationResponse {
 
     private String slackUsername;
     private int result;
-    private Operation_Type operation_type;
+//    private Operation_Type operation_type;
+    private String operation_type;
+
 
 
 

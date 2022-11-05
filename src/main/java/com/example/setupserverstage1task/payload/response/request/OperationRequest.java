@@ -9,16 +9,23 @@ import lombok.Setter;
 
 public class OperationRequest {
 
-    private Operation_Type operation_type;
+//    private Operation_Type operation_type;
+    private String operation_type;
     private int x;
     private int y;
 
-
-    public OperationRequest(Operation_Type operation_type, int x, int y) {
+    public OperationRequest(String operation_type, int x, int y) {
         this.operation_type = operation_type;
         this.x = x;
         this.y = y;
     }
+
+
+    //    public OperationRequest(Operation_Type operation_type, int x, int y) {
+//        this.operation_type = operation_type;
+//        this.x = x;
+//        this.y = y;
+//    }
 
 
 }
